@@ -1,14 +1,12 @@
-
-
-def fibonacci():
-    a,n=0,1
-    while True:
-        a,n = n,n+a
-        yield n
-
-fib_ = fibonacci()
-while True:
-    print(next(fib_))
+def iterator(seq):
+  for i in seq:
+    yield i
+    yield -i
+n=0
+for i in iterator(range(10)):
+    n+=1
+print(n)
+    
 
         
     
