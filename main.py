@@ -1,3 +1,6 @@
+
+#hello just redacted
+
 def iterator(seq):
   for i in seq:
     yield i
